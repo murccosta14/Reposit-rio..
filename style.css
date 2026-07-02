@@ -1,9 +1,9 @@
 body {
-background-color: rgb(28, 27, 27);
+background-color: rgb(255, 255, 255);
 }
 h1 {
-    color: goldenrod;
+    color: rgb(169, 128, 23);
 }
 p { 
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
