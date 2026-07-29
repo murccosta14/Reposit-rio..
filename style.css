@@ -11,7 +11,9 @@ p {
 
 h2 {
     color: midnightblue;
+     font-style: inherit;
 }
 h3 {
     color:darkblue;
+    font-style: oblique;
 }
