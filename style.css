@@ -3,19 +3,19 @@ background-color: white;
 }
 h1 {
     color: rgb(169, 128, 23);
-    font-style: italic;
+    font-style:oblique;
 }
 p { 
     color: rgb(0, 0, 0);
 }
 
 h2 {
-    color: midnightblue;
+    color: rgb(29, 29, 154);
      font-style: inherit;
 }
 h3 {
-    color:darkblue;
-    font-style: oblique;
+    color:rgb(188, 37, 17);
+    font-style: italic;
 }
 .capa {
     width: 83%;
