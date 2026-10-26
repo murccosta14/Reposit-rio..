@@ -4,23 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Guia interativo da NBA: conheça as franquias, aprenda as regras, compare equipes e teste seus conhecimentos.">
+  <meta name="description" content="NBA Central: times, placares, comparador, playoffs, quiz e teste de compatibilidade.">
   <title>NBA Central | Guia da Liga</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header" id="inicio">
-    <a class="brand" href="#inicio" aria-label="NBA Central - início">
-      <span class="brand-mark">NBA</span><span> CENTRAL<span class="brand-dot">.</span></span>
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">NBA</span>
+      <span>CENTRAL<span class="brand-dot">.</span></span>
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav class="main-nav" id="mainNav">
       <a href="#sobre">A liga</a>
       <a href="#times">Times</a>
       <a href="#placares">Placares</a>
       <a href="#comparador">Comparador</a>
       <a href="#playoffs">Playoffs</a>
+      <a href="#compatibilidade">Meu time</a>
       <a href="#quiz">Quiz</a>
     </nav>
   </header>
@@ -30,10 +35,17 @@
       <div class="hero-copy">
         <p class="eyebrow">BASQUETE • HISTÓRIA • ESTATÍSTICAS</p>
         <h1>Entre em quadra.<br><span>Conheça a NBA.</span></h1>
-        <p class="hero-text">Um guia interativo para conhecer as 30 franquias, entender o campeonato e testar o que você sabe sobre a liga.</p>
+        <p class="hero-text">
+          Conheça as 30 franquias, acompanhe os jogos,
+          simule os playoffs e descubra qual time combina com você.
+        </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#times">Explorar os times</a>
-          <a class="button button-ghost" href="#quiz">Testar meus conhecimentos</a>
+          <a class="button button-primary" href="#compatibilidade">
+            Descobrir meu time
+          </a>
+          <a class="button button-ghost" href="#times">
+            Explorar os times
+          </a>
         </div>
         <div class="hero-stats">
           <div><strong>30</strong><span>franquias</span></div>
@@ -41,7 +53,7 @@
           <div><strong>6</strong><span>divisões</span></div>
         </div>
       </div>
-      <div class="hero-art" aria-label="Ilustração de uma bola de basquete">
+      <div class="hero-art">
         <div class="court-ring ring-one"></div>
         <div class="court-ring ring-two"></div>
         <div class="basketball" aria-hidden="true">🏀</div>
@@ -54,23 +66,29 @@
         <p class="eyebrow">ENTENDA O JOGO</p>
         <h2>O que é a NBA?</h2>
       </div>
-      <p class="intro-copy">A <strong>National Basketball Association (NBA)</strong> é a principal liga profissional de basquete da América do Norte. Foi fundada em 1946 como Basketball Association of America (BAA) e adotou o nome NBA em 1949. São 30 franquias: 29 nos Estados Unidos e uma no Canadá, o Toronto Raptors.</p>
+      <p class="intro-copy">
+        A <strong>National Basketball Association (NBA)</strong>
+        é a principal liga profissional de basquete da América do Norte.
+        Foi fundada em 1946 como Basketball Association of America
+        (BAA) e adotou o nome NBA em 1949. São 30 franquias:
+        29 nos Estados Unidos e uma no Canadá.
+      </p>
 
       <div class="info-grid">
         <article class="info-card">
           <span class="info-icon">◷</span>
           <h3>Temporada regular</h3>
-          <p>Na temporada regular tradicional, cada equipe disputa 82 partidas. A classificação ajuda a definir quem avança à pós-temporada.</p>
+          <p>Tradicionalmente, cada equipe disputa 82 partidas.</p>
         </article>
         <article class="info-card">
           <span class="info-icon">↗</span>
           <h3>Play-In</h3>
-          <p>As equipes que terminam entre o 7º e o 10º lugar de cada conferência disputam vagas finais nos playoffs.</p>
+          <p>Os times do 7º ao 10º lugar disputam as vagas finais nos playoffs.</p>
         </article>
         <article class="info-card">
           <span class="info-icon">♛</span>
           <h3>Playoffs</h3>
-          <p>16 equipes disputam séries eliminatórias em melhor de sete jogos. É preciso vencer quatro partidas para avançar em cada série.</p>
+          <p>As séries são disputadas em melhor de sete jogos.</p>
         </article>
       </div>
 
@@ -80,10 +98,10 @@
           <h3>O básico do basquete NBA</h3>
         </div>
         <ul>
-          <li><strong>48 minutos:</strong> quatro quartos de 12 minutos, sem contar prorrogações.</li>
-          <li><strong>24 segundos:</strong> limite do relógio de arremesso.</li>
-          <li><strong>8 segundos:</strong> tempo para avançar a bola à quadra de ataque.</li>
-          <li><strong>6 faltas:</strong> em regra, um jogador é desqualificado ao cometer a sexta falta pessoal.</li>
+          <li><strong>48 minutos:</strong> quatro quartos de 12 minutos.</li>
+          <li><strong>24 segundos:</strong> relógio de arremesso.</li>
+          <li><strong>8 segundos:</strong> para avançar à quadra de ataque.</li>
+          <li><strong>6 faltas:</strong> limite normal de faltas pessoais.</li>
         </ul>
       </div>
     </section>
@@ -92,13 +110,15 @@
       <div class="section-heading">
         <p class="eyebrow">30 FRANQUIAS • 2 CONFERÊNCIAS</p>
         <h2>Encontre seu time</h2>
-        <p>Pesquise por nome, cidade ou divisão. Selecione uma equipe para ver seu perfil.</p>
+        <p>Pesquise por nome, cidade ou divisão.</p>
       </div>
 
       <div class="team-controls">
         <label class="search-box">
-          <span aria-hidden="true">⌕</span>
-          <input id="teamSearch" type="search" placeholder="Buscar time ou cidade..." aria-label="Buscar time ou cidade">
+          <span>⌕</span>
+          <input id="teamSearch" type="search"
+            placeholder="Buscar time ou cidade..."
+            aria-label="Buscar time ou cidade">
         </label>
         <label class="select-label">
           <span>Conferência</span>
@@ -132,54 +152,72 @@
 
       <div class="results-line">
         <span id="teamCount">30 equipes</span>
-        <button class="text-button" id="clearFilters">Limpar filtros ↺</button>
+        <button class="text-button" id="clearFilters">
+          Limpar filtros ↺
+        </button>
       </div>
-      <div class="team-grid" id="teamGrid" aria-live="polite"></div>
-      <p class="fine-print">Os dados históricos resumidos são introdutórios e podem exigir conferência adicional. Logos carregados de fonte externa podem não aparecer se a conexão bloquear as imagens.</p>
+      <div class="team-grid" id="teamGrid"></div>
+      <p class="fine-print">
+        Os dados históricos são introdutórios. Logos dependem
+        de carregamento externo.
+      </p>
     </section>
 
     <section class="section live-section" id="placares">
       <div class="section-heading">
         <p class="eyebrow">ACOMPANHAMENTO</p>
         <h2>Placar de jogos</h2>
-        <p>O painel consulta um feed público de placares. A disponibilidade depende da fonte externa e da conexão.</p>
+        <p>Consulte os resultados disponibilizados pela fonte externa.</p>
       </div>
       <div class="live-toolbar">
         <span class="live-status">
           <span class="status-dot"></span>
           <span id="liveStatus">Pronto para consultar</span>
         </span>
-        <button class="button button-primary" id="refreshScores">Atualizar placares</button>
+        <button class="button button-primary" id="refreshScores">
+          Atualizar placares
+        </button>
       </div>
       <div id="scoreboard" class="scoreboard">
         <div class="empty-state">
           <span>🏀</span>
-          <p>Clique em “Atualizar placares” para consultar os jogos disponíveis.</p>
+          <p>Clique para consultar os jogos disponíveis.</p>
         </div>
       </div>
-      <p class="fine-print">Fonte de dados: feed público da ESPN, não oficial da NBA. Se a consulta falhar por restrições de rede/CORS ou não houver partidas, o painel informará isso. Nenhum placar fictício será exibido.</p>
+      <p class="fine-print">
+        Fonte pública da ESPN. A consulta pode falhar por restrições
+        de acesso ou de conexão.
+      </p>
     </section>
 
     <section class="section compare-section" id="comparador">
       <div class="section-heading">
         <p class="eyebrow">CARA A CARA</p>
         <h2>Compare duas franquias</h2>
-        <p>Compare dados históricos básicos lado a lado.</p>
+        <p>Compare os dados históricos lado a lado.</p>
       </div>
       <div class="compare-controls">
-        <label>Time A<select id="compareA" aria-label="Escolher primeiro time"></select></label>
+        <label>
+          Time A
+          <select id="compareA"></select>
+        </label>
         <span class="versus">VS</span>
-        <label>Time B<select id="compareB" aria-label="Escolher segundo time"></select></label>
+        <label>
+          Time B
+          <select id="compareB"></select>
+        </label>
       </div>
       <div id="comparison" class="comparison-panel"></div>
-      <p class="fine-print">“Títulos” refere-se aos campeonatos da NBA reconhecidos pela liga, incluindo títulos históricos de franquias que mudaram de cidade, quando aplicável.</p>
     </section>
 
     <section class="section playoffs-section" id="playoffs">
       <div class="section-heading">
         <p class="eyebrow">VOCÊ NO COMANDO</p>
         <h2>Simulador de playoffs</h2>
-        <p>Monte os confrontos e simule séries em melhor de sete. O resultado é aleatório e serve apenas para demonstração, não é previsão real.</p>
+        <p>
+          Escolha oito equipes por conferência e simule séries
+          em melhor de sete. Os resultados são aleatórios.
+        </p>
       </div>
       <div class="playoff-setup">
         <div class="setup-column">
@@ -192,19 +230,72 @@
         </div>
       </div>
       <div class="playoff-actions">
-        <button class="button button-primary" id="simulatePlayoffs">Simular playoffs</button>
-        <button class="button button-ghost" id="resetPlayoffs">Restaurar seleções</button>
+        <button class="button button-primary" id="simulatePlayoffs">
+          Simular playoffs
+        </button>
+        <button class="button button-ghost" id="resetPlayoffs">
+          Restaurar seleções
+        </button>
       </div>
-      <div id="playoffResults" class="playoff-results" aria-live="polite">
-        <p class="empty-state">Escolha as equipes de cada conferência e inicie a simulação.</p>
+      <div id="playoffResults" class="playoff-results">
+        <p class="empty-state">Escolha as equipes e inicie a simulação.</p>
       </div>
+    </section>
+
+    <!-- NOVO TESTE DE COMPATIBILIDADE -->
+    <section class="section affinity-section" id="compatibilidade">
+      <div class="section-heading">
+        <p class="eyebrow">DESCUBRA SUA TORCIDA</p>
+        <h2>Qual time da NBA combina com você?</h2>
+        <p>
+          Responda a 10 perguntas sobre suas preferências no basquete.
+          Veja quais três franquias mais combinam com suas respostas.
+        </p>
+      </div>
+
+      <div class="affinity-shell">
+        <div class="affinity-top">
+          <span id="affinityProgress">Pergunta 1 de 10</span>
+          <span id="affinityPercent">0% concluído</span>
+        </div>
+        <div class="progress-track">
+          <div id="affinityProgressBar"
+            class="progress-bar" style="width:0%"></div>
+        </div>
+
+        <div id="affinityQuestionArea">
+          <h3 id="affinityQuestion"></h3>
+          <div id="affinityOptions" class="affinity-options"
+            role="group" aria-label="Alternativas"></div>
+        </div>
+
+        <div id="affinityResult" class="affinity-result"
+          hidden aria-live="polite"></div>
+
+        <div class="affinity-actions">
+          <button class="button button-ghost"
+            id="affinityBack" type="button">Voltar</button>
+          <button class="button button-primary"
+            id="affinityNext" type="button" disabled>
+            Próxima pergunta
+          </button>
+          <button class="text-button"
+            id="affinityRestart" type="button">
+            Recomeçar teste
+          </button>
+        </div>
+      </div>
+      <p class="fine-print">
+        Teste recreativo: os perfis e percentuais são estimativas
+        de afinidade, não medições científicas.
+      </p>
     </section>
 
     <section class="section quiz-section" id="quiz">
       <div class="section-heading">
         <p class="eyebrow">TESTE SEU CONHECIMENTO</p>
         <h2>Quiz da NBA</h2>
-        <p>Responda às perguntas e veja sua pontuação no final.</p>
+        <p>Responda às perguntas e veja sua pontuação.</p>
       </div>
       <div class="quiz-card" id="quizCard">
         <div class="quiz-top">
@@ -216,10 +307,14 @@
         </div>
         <h3 id="quizQuestion"></h3>
         <div id="quizAnswers" class="quiz-answers"></div>
-        <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+        <p id="quizFeedback" class="quiz-feedback"
+          aria-live="polite"></p>
         <div class="quiz-footer">
-          <button class="button button-primary" id="nextQuestion" disabled>Próxima pergunta</button>
-          <button class="text-button" id="restartQuiz">Reiniciar quiz</button>
+          <button class="button button-primary"
+            id="nextQuestion" disabled>Próxima pergunta</button>
+          <button class="text-button" id="restartQuiz">
+            Reiniciar quiz
+          </button>
         </div>
       </div>
     </section>
@@ -228,14 +323,18 @@
   <footer class="site-footer">
     <a class="brand" href="#inicio">
       <span class="brand-mark">NBA</span>
-      <span> CENTRAL<span class="brand-dot">.</span></span>
+      <span>CENTRAL<span class="brand-dot">.</span></span>
     </a>
-    <p>Projeto educativo independente sobre basquete. NBA e marcas das equipes pertencem aos seus respectivos titulares.</p>
-    <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+    <p>
+      Projeto educativo independente sobre basquete.
+      NBA e marcas das equipes pertencem aos seus titulares.
+    </p>
+    <a class="back-top" href="#inicio">Voltar ao topo ↑</a>
   </footer>
 
   <dialog id="teamDialog" class="team-dialog">
-    <button class="dialog-close" id="closeDialog" aria-label="Fechar detalhes">×</button>
+    <button class="dialog-close" id="closeDialog"
+      aria-label="Fechar">×</button>
     <div id="teamDialogContent"></div>
   </dialog>
 </body>
